@@ -135,6 +135,8 @@ subplot(1, 2, 1), imshow(img), title('Original Image');
 subplot(1, 2, 2), imshow(cl), title('Processed Image (Opening & Closing)');
 ```
 
+![Remove noise & fix small cuts/holes in fingerprint](output3.png)
+
 # Boundary Extraction using structuring elements
 
 ```matlab
