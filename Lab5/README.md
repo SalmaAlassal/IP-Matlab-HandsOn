@@ -23,7 +23,7 @@ binrayImg = im2bw(grayImg, threshold);
 subplot(2,2,2), imshow(binrayImg), title('Thresholded Image');
 ```
 
-![Segmentation and Thresholding](output.png)
+![Segmentation and Thresholding](outputs/output.png)
 
 -------------------------------------------------------------
 
@@ -58,7 +58,7 @@ subplot(1,2,1), imshow(img), title('Orignial Image');
 subplot(1,2,2), imshow(uint8(result)), title('Extracted Chairs');
 ```
 
-![Color-based segmentation](output1.png)
+![Color-based segmentation](outputs/output1.png)
 
 -------------------------------------------------------------
 
@@ -92,6 +92,6 @@ subplot(2, 2, 3), imshow(~edgeImg), title('Edge Detection - White BG');
 subplot(2, 2, 4), imshow(RGB), title('Edge Detection - RGB');
 ````
 
-![Edge-based segmentation](output2.png)
+![Edge-based segmentation](outputs/output2.png)
 
 -------------------------------------------------------------

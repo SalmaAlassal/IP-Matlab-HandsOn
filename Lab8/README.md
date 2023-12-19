@@ -1,4 +1,4 @@
-# Extract shapes and color each shape different
+# Extract shapes and color each shape with a different color
 
 - Square Rectangaularity: 1
 - Circle Rectangaularity: 0.6 - 0.85

@@ -1,7 +1,7 @@
 % Count different objects in an image
 
 % Read the image
-img = imread('shapes.png');
+img = imread('images/shapes.png');
 
 % Convert the image to grayscale
 grayImg = rgb2gray(img);
@@ -67,7 +67,7 @@ subplot(2, 2, 4), imshow(circle_image), title('Circles');
 % Count the number of disks (circles) in an image
 
 % Read the image
-img = imread('spheres.png');
+img = imread('images/spheres.png');
 
 % Convert the image to grayscale
 grayImg = rgb2gray(img);
@@ -101,7 +101,7 @@ subplot(1, 2, 2), imshow(erodedImg), title('Image after Erosion');
 % Remove noise & fix small cuts/holes in fingerprint
 
 % Read the image
-img = imread('fingerprint.png');
+img = imread('images/fingerprint.png');
 
 % Define a structuring element
 se = strel('square', 3);
@@ -120,7 +120,7 @@ subplot(1, 2, 2), imshow(cl), title('Processed Image (Opening & Closing)');
 % Boundary Extraction using a 3×3 structure element.
 
 % Read the image
-img = imread('man.png');
+img = imread('images/man.png');
 
 % Convert the image to grayscale
 grayImage = rgb2gray(img);
@@ -145,7 +145,7 @@ subplot(1, 2, 2), imshow(dilatedImg), title('Boundary Extraction');
 % Hole Filling
 
 % Read the grayscale image
-img = imread('holes.png');
+img = imread('images/holes.png');
 
 % Define a disk-shaped structuring element
 se = strel('disk', 17);
@@ -155,5 +155,5 @@ filledImage = imclose(img, se);
 
 % Visualization
 figure;
-subplot(1, 2, 1), imshow(binaryImage), title('Binary Image');
+subplot(1, 2, 1), imshow(img), title('Binary Image');
 subplot(1, 2, 2), imshow(filledImage), title('Processed Image (Hole Filling)');

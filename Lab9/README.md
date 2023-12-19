@@ -52,7 +52,7 @@ subplot(2, 3, 5), imshow(inverse_fourier), title('Final Image');
 
 -----------------------------------------------------------------
 
-# Detect Traffic Light
+# Detect Traffic Lights
 
 ```matlab
 % Detect which light is ON in the traffic light

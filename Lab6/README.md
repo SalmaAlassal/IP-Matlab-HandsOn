@@ -67,7 +67,7 @@ subplot(2, 2, 3), imshow(square_image), title('Squares');
 subplot(2, 2, 4), imshow(circle_image), title('Circles');
 ```
 
-![Count different objects in an image](output.png)
+![Count different objects in an image](outputs/output.png)
 
 
 ----------------------------------------------------------
@@ -110,7 +110,7 @@ subplot(1, 2, 1), imshow(img), title('Original Image');
 subplot(1, 2, 2), imshow(erodedImg), title('Image after Erosion');
 ```
 
-![Count the number of disks (circles) in an image](output1.png)
+![Count the number of disks (circles) in an image](outputs/output1.png)
 
 ----------------------------------------------------------
 
@@ -135,7 +135,7 @@ subplot(1, 2, 1), imshow(img), title('Original Image');
 subplot(1, 2, 2), imshow(cl), title('Processed Image (Opening & Closing)');
 ```
 
-![Remove noise & fix small cuts/holes in fingerprint](output3.png)
+![Remove noise & fix small cuts/holes in fingerprint](outputs/output3.png)
 
 # Boundary Extraction using structuring elements
 
@@ -164,7 +164,7 @@ subplot(1, 2, 1), imshow(img), title('Original Image');
 subplot(1, 2, 2), imshow(dilatedImg), title('Boundary Extraction');
 ```
 
-![Boundary Extraction using structuring elements](output4.png)
+![Boundary Extraction using structuring elements](outputs/output4.png)
 
 ----------------------------------------------------------
 
@@ -188,6 +188,6 @@ subplot(1, 2, 1), imshow(binaryImage), title('Binary Image');
 subplot(1, 2, 2), imshow(filledImage), title('Processed Image (Hole Filling)');
 ```
 
-![Hole Filling](output5.png)
+![Hole Filling](outputs/output5.png)
 
 ----------------------------------------------------------

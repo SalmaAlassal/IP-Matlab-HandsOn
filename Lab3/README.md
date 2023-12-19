@@ -1,11 +1,22 @@
-% Display the histograms of the RGB channels separately from image ìJaguar.bmpî.
+# Lab 3: Image Enhancement
+
+## Histogram Equalization
+
+```matlab
+% Display the histograms of the RGB channels separately from image ‚ÄúJaguar.bmp‚Äù.
 img = imread('images/Jaguar.bmp');
 figure;
 subplot(2,2,1),imshow(img), title('Original Image');
 subplot(2, 2,2),imhist(img(:,:,1)), title('Red Histogram');
 subplot(2,2,3),imhist(img(:,:,2)), title('Green Histogram');
 subplot(2,2,4),imhist(img(:,:,3)), title('Blue Histogram');
+```
+![Output](outputs/output.png)
 
+
+## Contrast Stretching
+
+```matlab
 % Implement Contrast method that apply contrast stretching technique
 img = imread('images/ContrastDark.bmp');
 figure;
@@ -15,8 +26,14 @@ subplot(2,2,2),imhist(img), title('Original Image Histogram');
 img = Contrast(img, 0, 255);
 subplot(2,2,3),imshow(img), title('Contrasted Image');
 subplot(2,2,4),imhist(img), title('Contrasted Image Histogram');
+```
+![Output](outputs/output1.png)
 
-% Apply histogram equalization on image ìUnequalized_1.jpgî or ìUnequalized_2.pngî and 
+
+### Histogram Equalization
+
+```matlab
+% Apply histogram equalization on image ‚ÄúUnequalized_1.jpg‚Äù or ‚ÄúUnequalized_2.png‚Äù and 
 img1 = imread('images/Unequalized_1.jpg');
 img2 = imread('images/Unequalized_2.PNG');
 
@@ -34,8 +51,14 @@ subplot(2,2,1),imshow(img1), title('Equalized Image 1');
 subplot(2,2,2),imhist(img1), title('Equalized Image 1 Histogram');
 subplot(2,2,3),imshow(img2), title('Equalized Image 2');
 subplot(2,2,4),imhist(img2), title('Equalized Image 2 Histogram');
+```
+![Output](outputs/output2.png)
+![Output](outputs/output3.png)
 
-% Apply histogram matching on image ìconcordaerial.pngî with reference image ìconcordorthophoto.pngî 
+## Histogram Matching
+
+```matlab
+% Apply histogram matching on image ‚Äúconcordaerial.png‚Äù with reference image ‚Äúconcordorthophoto.png‚Äù 
 img1 = imread('images/concordaerial.png');
 refImg = imread('images/concordorthophoto.png');
 figure;
@@ -49,3 +72,6 @@ imghist = imhistmatch(img1, refImg);
 figure;
 subplot(2,2,1),imshow(img1), title('Original Image');
 subplot(2,2,2),imhist(imghist), title('Histogram Matched');
+```
+![Output](outputs/output4.png)
+![Output](outputs/output5.png)
